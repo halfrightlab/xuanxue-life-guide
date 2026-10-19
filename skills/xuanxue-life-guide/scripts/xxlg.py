@@ -4,8 +4,8 @@
 只用 Python 3.8+ 标准库。所有规则来自《改命记实录》，出处写在每个命令的输出里。
 
   查书
-    xxlg.py where                         正文在哪（没有就提示怎么取）
-    xxlg.py fetch                         把正文浅克隆到 ~/.cache/xuanxue-life-guide
+    xxlg.py where                         指南内容在哪（没有就提示怎么取）
+    xxlg.py fetch                         把指南内容浅克隆到 ~/.cache/xuanxue-life-guide
     xxlg.py search 失眠 [词2…] [--in book|docs|chapters] [--limit 12]
     xxlg.py entry 4 1                     第 4 节第 1 条全文
     xxlg.py entry --title 烤大蒜          按标题找条目
@@ -43,7 +43,7 @@ CACHE = Path(os.environ.get('XDG_CACHE_HOME', Path.home() / '.cache')) / 'xuanxu
 SRC = '《改命记实录》'
 
 
-# ════════════════ 正文位置 ════════════════
+# ════════════════ 指南内容位置 ════════════════
 def find_root(quiet=False):
     cands = []
     if os.environ.get('XXLG_ROOT'):
@@ -57,13 +57,13 @@ def find_root(quiet=False):
             return c
     if quiet:
         return None
-    sys.exit('找不到正文。运行 `python3 xxlg.py fetch` 取一份（需要 git 和网络），'
+    sys.exit('找不到指南内容。运行 `python3 xxlg.py fetch` 取一份（需要 git 和网络），'
              '或者设置环境变量 XXLG_ROOT 指向仓库根目录。')
 
 
 def cmd_where(a):
     r = find_root(quiet=True)
-    print(r if r else '没有找到正文；运行 fetch 取一份。')
+    print(r if r else '没有找到指南内容；运行 fetch 取一份。')
 
 
 def cmd_fetch(a):
@@ -72,7 +72,7 @@ def cmd_fetch(a):
     else:
         CACHE.parent.mkdir(parents=True, exist_ok=True)
         subprocess.run(['git', 'clone', '--depth', '1', '-q', REPO, str(CACHE)], check=True)
-    print('正文在', CACHE)
+    print('指南内容在', CACHE)
 
 
 # ════════════════ 解析 ════════════════

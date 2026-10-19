@@ -36,7 +36,7 @@ mkdir -p ~/.claude/skills
 cp -r ~/.cache/xuanxue-life-guide/skills/xuanxue-life-guide ~/.claude/skills/
 ```
 
-第一行顺便把正文放到了 skill 默认会找的位置。之后直接问"牙痛有什么土办法""北边缺角怎么补""下个月哪天适合挪床"就会触发；也可以明说"用玄学生活指南回答"。
+第一行顺便把指南内容放到了 skill 默认会找的位置。之后直接问"牙痛有什么土办法""北边缺角怎么补""下个月哪天适合挪床"就会触发；也可以明说"用玄学生活指南回答"。
 
 ## 装到 Codex
 

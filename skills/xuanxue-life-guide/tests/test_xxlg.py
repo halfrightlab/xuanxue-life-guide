@@ -109,7 +109,7 @@ class Age(unittest.TestCase):
         self.assertIn('坎1', run('age', '70'))
 
 
-@unittest.skipUnless(xxlg.find_root(quiet=True), '没有正文，跳过查书测试')
+@unittest.skipUnless(xxlg.find_root(quiet=True), '没有指南内容，跳过查书测试')
 class Search(unittest.TestCase):
     def test_synonyms(self):
         out = run('search', '睡不着')

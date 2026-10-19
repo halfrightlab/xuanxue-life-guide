@@ -11,14 +11,14 @@ description: 玄学生活指南（半对实验室 halfrightlab 出品）。用�
 
 ## 工具
 
-所有查书和计算都用 `scripts/xxlg.py`（只用 Python 标准库）。先确认正文在哪：
+所有查书和计算都用 `scripts/xxlg.py`（只用 Python 标准库）。先确认指南内容在哪：
 
 ```bash
-python3 scripts/xxlg.py where      # 显示正文目录；没有就运行下一行
+python3 scripts/xxlg.py where      # 显示指南内容目录；没有就运行下一行
 python3 scripts/xxlg.py fetch      # 浅克隆到 ~/.cache/xuanxue-life-guide（要 git 和网络）
 ```
 
-在仓库里运行时它会自动找到正文。取不到正文时，如实告诉用户，不要凭印象复述书里的内容；计算类命令（命宫、八星、择日等）不依赖正文，照样能用。
+在仓库里运行时它会自动找到指南内容。取不到指南内容时，如实告诉用户，不要凭印象复述书里的内容；计算类命令（命宫、八星、择日等）不依赖指南内容，照样能用。
 
 | 想做什么 | 命令 |
 |---|---|
