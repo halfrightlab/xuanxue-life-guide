@@ -22,7 +22,7 @@
 
 ### [打开在线检索页](https://fatepaw.judeyang.com/knowledge/) · [让 AI 照书回答（skill）](skills/xuanxue-life-guide/README.md)
 
-在线检索页可以搜关键词、按"睡不好""肠胃""搬家看房"这些场景筛方法。AI 助手 skill 支持 Claude Code 和 Codex，装上后直接问"咳嗽带黄痰怎么办"，它先查书里的条目再回答，并注明出自第几节第几条、原书第几章。
+在线检索页可以搜关键词、按"睡不好""肠胃""搬家看房"这些场景筛方法。AI 助手 skill 支持 Claude Code 和 Codex：装上后直接问"咳嗽带黄痰怎么办""北边缺角怎么补"，它先查书再回答，注明出自第几节第几条；还能现场算命宫、八颗星、手机号车牌、八字喜用神、流年、称骨、九星吉日。
 
 <table>
 <tr><td align="right"><b>查阅</b></td><td align="left">
@@ -223,7 +223,7 @@
 
 代码（tools/、skills/）用 [MIT](LICENSE-CODE)。
 
-本指南在 Claude Code 协助下整理：逐章阅读、提炼方法、核对出处和章节号、生成目录。取舍和审定由维护者负责。
+本指南由**半对实验室 halfrightlab** 整理，Claude Code 协助：逐章阅读、提炼方法、核对出处和章节号、生成目录。取舍和审定由维护者负责。
 
 ## Star 走势
 
